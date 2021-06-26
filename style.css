@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --blue: hsl(248, 32%, 49%);
+  --darkBlue: hsl(249, 10%, 26%);
+  --grayblue: hsl(246, 25%, 77%);
+}
+body {
+  font-size: 16px;
+  background-color: var(--red);
+  background-image: url(./images/bg-intro-desktop.png);
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  max-width: 1110px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.info {
+  color: #fff;
+  width: 100%;
+  max-width: 540px;
+}
+.info h1 {
+  font-size: 50px;
+  max-width: 424px;
+  margin-bottom: 30px;
+  line-height: 55px;
+}
+.info p {
+  font-weight: 500;
+}
+.form {
+  width: 100%;
+  max-width: 540px;
+}
+.advice {
+  width: 100%;
+  text-align: center;
+  background-color: var(--blue);
+  color: #fff;
+  padding: 18px 0px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 0px hsla(249, 10%, 26%, 0.363);
+  margin-bottom: 24px;
+}
+.advice span {
+  font-weight: 600;
+}
+form {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 40px;
+}
+/* 28min */
+.container-input {
+  position: relative;
+  margin-bottom: 20px;
+}
+form input {
+  width: 100%;
+  padding: 19px 32px;
+  border-color: var(--grayblue);
+  border-width: 1px;
+  border-style: solid;
+  margin: 0;
+}
+form input::placeholder {
+  font-family: "Poppins", sans-serif;
+  color: var(--darkBlue);
+  font-weight: 700;
+}
+.container-input img {
+  position: absolute;
+  top: 17px;
+  right: 28px;
+  visibility: hidden;
+}
+.container-input p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  text-align: end;
+  color: var(--red);
+  font-size: 12px;
+  font-style: italic;
+  margin-bottom: 24px;
+  visibility: hidden;
+  height: 0;
+  margin: 0;
+}
+form button {
+  width: 100%;
+  padding: 20px 0px;
+  text-transform: uppercase;
+  background-color: var(--green);
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 0px hsl(154, 59%, 40%);
+  margin-bottom: 18px;
+}
+.terms {
+  color: var(--grayblue);
+  font-size: 12px;
+  text-align: center;
+  font-weight: 500;
+}
+.terms span {
+  color: var(--red);
+}
+@media (max-width: 1140px) {
+  .container {
+    flex-direction: column;
+    margin-top: 98px;
+    margin-bottom: 68px;
+    margin-left: 24px;
+    margin-right: 24px;
+    height: auto;
+    align-items: center;
+  }
+  .info h1 {
+    text-align: center;
+  }
+  .info p {
+    text-align: center;
+  }
+}
